@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="lab08" />
+        <module name="projekt_aktual" />
+        <module name="java1_2022_cie0122" />
+        <module name="Bomberman" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>

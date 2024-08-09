@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="620.0" prefWidth="720.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Bomberman.GameController">
+   <children>
+      <Button fx:id="startBtn" layoutX="251.0" layoutY="184.0" mnemonicParsing="false" onAction="#startPressed" prefHeight="41.0" prefWidth="218.0" text="Start Game" />
+      <Canvas fx:id="canvas" cache="true" height="620.0" visible="false" width="720.0" />
+      <Button fx:id="pauseBtn" layoutX="685.0" layoutY="1.0" mnemonicParsing="false" onAction="#pausePressed" prefHeight="34.0" prefWidth="37.0" text="||" visible="false" />
+      <Text fx:id="pausedText" fill="WHITE" layoutX="252.0" layoutY="334.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Paused" visible="false">
+         <font>
+            <Font name="SansSerif Regular" size="63.0" />
+         </font>
+      </Text>
+      <Button fx:id="exitBtn" layoutX="251.0" layoutY="310.0" mnemonicParsing="false" onAction="#exitPressed" prefHeight="41.0" prefWidth="218.0" text="Exit Game" />
+      <Button fx:id="scoresBtn" layoutX="251.0" layoutY="246.0" mnemonicParsing="false" onAction="#scoresPressed" prefHeight="41.0" prefWidth="218.0" text="Scores" />
+      <TextField fx:id="nickTextBox" layoutX="279.0" layoutY="460.0" text="Player" />
+      <Text fx:id="nickText" fill="WHITE" layoutX="179.0" layoutY="478.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nickname:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <ListView fx:id="scoresListView" layoutX="131.0" layoutY="103.0" prefHeight="369.0" prefWidth="459.0" stylesheets="@application.css" visible="false" />
+      <Button fx:id="backButton" disable="true" layoutX="682.0" mnemonicParsing="false" onAction="#backPressed" prefHeight="25.0" prefWidth="37.0" text="X" visible="false">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="loadBtn" disable="true" layoutX="61.0" layoutY="512.0" mnemonicParsing="false" onAction="#load" prefHeight="41.0" prefWidth="218.0" text="Load Data" visible="false" />
+      <Button fx:id="saveBtn" disable="true" layoutX="441.0" layoutY="512.0" mnemonicParsing="false" onAction="#save" prefHeight="41.0" prefWidth="218.0" text="Save Data" visible="false" />
+   </children>
+</AnchorPane>
